@@ -1,0 +1,47 @@
+/* header.component.css */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  .logo img {
+    max-width: 80px; /* Adjust the size of the logo as needed */
+    border-radius: 50%; /* Add a rounded border to the logo */
+  }
+  
+  .company-info {
+    text-align: center;
+  }
+  
+  .company-info h1 {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  
+  .company-info p {
+    font-size: 14px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffd700; /* Change the color on hover as needed */
+  }
+  

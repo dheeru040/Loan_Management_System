@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submission</title>
+</head>
+<body>
+  <app-header></app-header>
+  <h3>Welcome To Form Submission</h3>
+  <p>Please Upload Required Documents To Process Your Loan</p>
+
+  <table>
+    <tr>
+      <td>
+        <div class="file-upload-container">
+          <label class="upload-label">Upload your VISA Copy</label>
+          <input type="file" (change)="onFileChanged($event, 0)">
+          <input type="button" (click)="onUpload(0)" value="Upload File 1">
+        </div>
+      </td>
+      <td>
+        <div class="file-upload-container">
+          <label class="upload-label">Upload your DL Copy</label>
+          <input type="file" (change)="onFileChanged($event, 1)">
+          <input type="button" (click)="onUpload(1)" value="Upload File 2">
+        </div>
+      </td>
+      <td>
+        <div class="file-upload-container">
+          <label class="upload-label">Upload your Passport Copy</label>
+          <input type="file" (change)="onFileChanged($event, 2)">
+          <input type="button" (click)="onUpload(2)" value="Upload File 3">
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <button type="submit" (click)="onSubmit()">Submit</button>
+
+  <app-footer></app-footer>
+</body>
+</html>

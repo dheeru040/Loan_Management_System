@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body>
+  <app-header></app-header>
+  <h1>WELCOME TO DHEERAJ LOAN COMPANY</h1>
+  <table>
+    <tr>
+      <td>
+        <h3>LOAN MANAGEMENT SYSTEM</h3>
+        <P>USER CREDENTIALS:</P>
+        <form (ngSubmit)="onSubmit()">
+          <label for="username">Username:</label>
+          <input type="text" id="username" [(ngModel)]="username" name="username" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" [(ngModel)]="password" name="password" required>
+
+          <button type="submit">Login</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+  <app-footer></app-footer>
+</body>
+</html>
